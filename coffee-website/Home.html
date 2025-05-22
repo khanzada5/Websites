@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sarone Coffee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f3ef;
+      color: #3b2e2e;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
+    }
+    .navbar {
+      background-color: #4e342e;
+      padding: 1.3rem 2rem;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .logo span {
+      color: #d7a86e;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      background-color: #fff7f0;
+    }
+    .hero-text {
+      flex: 1 1 400px;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero-text span {
+      color: #d7a86e;
+    }
+    .hero img {
+      flex: 1 1 400px;
+      width: 100%;
+      border-radius: 10px;
+      max-width: 500px;
+      height: auto;
+    }
+    .btn {
+      background-color: #d7a86e;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .btn {
+  background-color: #d7a86e;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+  cursor: pointer;
+  
+  transition: 
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #c19b53; 
+  box-shadow: 0 10px 20px rgba(197, 168, 110, 0.5);
+}
+
+    .why, .testimonials {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .why h2, .testimonials h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .why p {
+      max-width: 700px;
+      margin: 0 auto 2rem auto;
+      font-size: 1rem;
+    }
+
+        .why img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+
+
+    .menu {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .card img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 10px;
+    }
+
+    .test-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    img{
+  transition: 
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      filter: brightness(1.05);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card, .test-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img, .test-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .test-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #4e342e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">SAR<span>ONE</span></div>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Order Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <div class="hero-text">
+      <h1>Savor the <br><span>Perfect Brew!</span></h1>
+      <p>Bold aromas. Exceptional taste. Unforgettable experience.</p>
+      <a href="#" class="btn">Discover</a>
+    </div>
+    <img src="images/main.avif" alt="Coffee Hero">
+  </section>
+
+  <section class="why container">
+    <h2>Why Choose Us?</h2>
+    <p>Carefully roasted beans. Handcrafted perfection. Warm ambiance. Trusted by hundreds every morning.</p>
+    <img src="images/why.avif" alt="Image">
+  </section>
+
+  <section class="menu container">
+  <h2>What we <span>Serve</span></h2>
+  <div class="cards">
+    <div class="card">
+       <img src="https://images.pexels.com/photos/585750/pexels-photo-585750.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Espresso" loading="lazy">
+      <h3>Espresso</h3>
+      <p>Classic strong espresso shot with rich crema.</p>
+    </div>
+    <div class="card">
+       <img src="https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Latte" loading="lazy">
+      <h3>Latte</h3>
+      <p>Milk and espresso beautifully balanced with smooth foam art.</p>
+    </div>
+    <div class="card">
+       <img src="https://images.pexels.com/photos/434213/pexels-photo-434213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Cold Brew" loading="lazy">
+      <h3>Cold Brew</h3>
+      <p>Refreshing iced coffee with a bold, smooth finish.</p>
+    </div>
+    <div class="card">
+       <img src="https://images.pexels.com/photos/374147/pexels-photo-374147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Drip Coffee" loading="lazy">
+      <h3>Drip Coffee</h3>
+      <p>Slow-brewed, aromatic coffee served piping hot.</p>
+    </div>
+  </div>
+</section>
+
+  <section class="testimonials container">
+    <h2>Customer <span>Reviews</span></h2>
+    <div class="cards">
+      <div class="test-card">
+        <img src="images/review.jpg" alt="Customer 1">
+        <p>"Best coffee in town! I start every day with Sarone."</p>
+        <h4>- Ahmed</h4>
+      </div>
+      <div class="test-card">
+        <img src="images/review2.jpg" alt="Customer 2">
+        <p>"So cozy and warm. Latte is just ❤️."</p>
+        <h4>- Rayan</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sarone Coffee. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
