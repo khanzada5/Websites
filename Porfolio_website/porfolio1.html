@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Web Developer Portfolio</title>
+<style>
+  /* Reset and base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #eee;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  a:hover, a:focus {
+    text-decoration: underline;
+    outline: none;
+  }
+  header {
+    background: #20232a;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+  }
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    user-select: none;
+  }
+  nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  nav button {
+    background: none;
+    border: none;
+    color: #61dafb;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  nav button:hover, nav button:focus {
+    background-color: #61dafb;
+    color: #20232a;
+    outline: none;
+  }
+  main#content {
+    flex-grow: 1;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  footer {
+    background: #20232a;
+    color: #777;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 1rem;
+    user-select: none;
+  }
+  /* Responsive Nav */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      }
+    nav {
+      width: 100%;
+      justify-content: space-around;
+      margin-top: 0.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1 tabindex="0">Farzeen Khanzada - Web Developer</h1>
+  <nav aria-label="Primary Navigation">
+    <button data-section="homepage" aria-label="Go to Home section">Home</button>
+    <button data-section="about" aria-label="Go to About Me section">About Me</button>
+    <button data-section="projects" aria-label="Go to Projects section">Projects</button>
+    <button data-section="skills" aria-label="Go to Skills section">Skills</button>
+    <button data-section="resume" aria-label="Go to Resume section">Resume</button>
+    <button data-section="contact" aria-label="Go to Contact section">Contact</button>
+  </nav>    
+  </header>
+<main id="content" tabindex="0" aria-live="polite" aria-atomic="true" aria-relevant="all">
+ suiiiii
+</main>
+<footer>
+  © 2024 Jane Doe. All rights reserved.
+</footer>
+<script>
+  // Sections available
+  const sections = ['homepage', 'about', 'projects', 'skills', 'resume', 'contact'];
+  const contentDiv = document.getElementById('content');
+  const navButtons = document.querySelectorAll('nav button');
+  // Load section content from file
+  async function loadSection(section) {
+    if (!sections.includes(section)) return;
+    contentDiv}
