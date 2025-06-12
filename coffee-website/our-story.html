@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Story | Sarone Coffee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: #f7f3ef;
+      color: #3b2e2e;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+     /* Navbar styles */
+    .navbar {
+      background-color: #4e342e;
+      padding: 1.3rem 2rem;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+   
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar ul li a {
+      position: relative;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 5px 0;
+      transition: color 0.3s ease;
+    }
+
+   .navbar ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #d7a86e;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .navbar ul li a:hover {
+      color: #d7a86e;
+    }
+
+    .navbar ul li a:hover::after {
+      width: 100%;
+    }
+
+    .logo {
+      font-size: larger;
+    }
+
+    .logo span {
+      color: #d7a86e;
+    }
+
+    img {
+      transition:
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      filter: brightness(1.05);
+    }
+
+    .story-section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      animation: fadeIn 1s ease-in-out both;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .story-text {
+      flex: 1 1 500px;
+    }
+
+    .story-text h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .story-text span {
+      color: #d7a86e;
+    }
+
+    .story-text p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .story-image {
+      flex: 1 1 400px;
+    }
+
+    .story-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #4e342e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">SAR<span>ONE</span></div>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="ordernow.html">Order Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="story-section">
+      <div class="story-text">
+        <h1>Our <span>Story</span></h1>
+        <p>
+          Sarone Coffee was born from a simple dream — to create a warm space where conversations brew as perfectly as the coffee.
+          What began as a small local café has grown into a community hub, built on the love of craft roasting and heartfelt hospitality.
+        </p>
+        <p>
+          Our beans are ethically sourced, roasted with care, and brewed with precision. Every cup tells a story — of distant farms,
+          passionate growers, and your everyday moments. From the morning rush to lazy Sunday afternoons, Sarone is with you.
+        </p>
+        <p>
+          Whether you're here for a quick espresso, a long meeting over lattes, or just that comforting scent of fresh drip coffee,
+          we welcome you with warmth in every cup.
+        </p>
+      </div>
+      <div class="story-image">
+        <img src="images/mggg.jpg" alt="Our Story Image">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sarone Coffee. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
